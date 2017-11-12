@@ -1,35 +1,22 @@
 // Declaración de las variables  
-var select = document.getElementById('effects');
+var boton = document.getElementById('btn');
 
 // Declaramos las funciones que se emplearan al cargar la página
 window.onload = function() {
-  select.addEventListener('change', selectColor);
+  boton.addEventListener('click', showMenu);
 };
 
-// Declaramos la funcion selectColor que nos dará el efecto de acuerdo la elección de la lista
-function selectColor() {
-// Si seleccionamos sepia, se añadirá la clase sepia y se removeran las demás
-  if (select.value === 'sepia') {
-    document.getElementById('grid').classList.add('sepia');
-    document.getElementById('grid').classList.remove('grayscale');
-    document.getElementById('grid').classList.remove('invert');
-  }
-  // Si seleccionamos grayscale, se añadirá la clase sepia y se removeran las demás
-  if (select.value === 'grayscale') {
-    document.getElementById('grid').classList.add('grayscale');
-    document.getElementById('grid').classList.remove('sepia');
-    document.getElementById('grid').classList.remove('invert');
-  }
-  // Si seleccionamos invert, se añadirá la clase sepia y se removeran las demás
-  if (select.value === 'invert') {
-    document.getElementById('grid').classList.add('invert');
-    document.getElementById('grid').classList.remove('sepia');
-    document.getElementById('grid').classList.remove('grayscale');
-  }
-  // Si seleccionamos original, se añadirá la clase sepia y se removeran las demás
-  if (select.value === 'original') {
-    document.getElementById('grid').classList.remove('sepia');
-    document.getElementById('grid').classList.remove('grayscale');
-    document.getElementById('grid').classList.remove('invert');
+
+function showMenu(){
+  var menu=document.getElementById('options-menu');
+  // Verificamos si el elemento contiene la clase con contains
+  if(menu.classList.contains('disabled-menu')){
+  // Añadimos la clase enabled-menu y removemos las demás
+   menu.classList.remove('disabled-menu');
+   menu.classList.add('enabled-menu');
+  } else{
+  // Añadimos la clase disabled-menu y removemos las demás
+    menu.classList.remove('enabled-menu');
+    menu.classList.add('disabled-menu');
   }
 }

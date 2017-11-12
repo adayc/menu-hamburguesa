@@ -11,73 +11,62 @@
 
 body
 {
- background-image: url('../assets/imgs/unicornio.jpg');
- background-position: right; /*Posicionamos el fondo en el centro*/
+ background-color:#FFE5CC;
+ background-image: url('../assets/imgs/hamburguesa.jpg');
+ background-position:center top; /*Posicionamos el fondo en el centro*/
  background-repeat:no-repeat;/*Indicamos que no se repita el fondo*/
- background-size: 25%;/*Ajustamos el tamaño de la imagen de fondo*/
+ background-size: 50%;/*Ajustamos el tamaño de la imagen de fondo*/
  font-family: 'Monoton', cursive;
 }
 
 
 
 h1{
- margin:50px;
- text-align: center;
- text-decoration:underline;
+  margin:50px;
+  text-align: center;
+  text-decoration:underline;
 }
 
-
-select{
- background-color:#99f;
- color: white;
- text-align: center;
+hr{
+  margin:5px;
 }
 
-#options {
- margin-top: 50px;
- padding-left:46%;
+button{
+  margin:20px;
+  width:80px;
+  
 }
 
-
-#grid {
- text-align: center;
- width: 100%;
+/*Configuracion del menú navegador*/
+nav{
+  margin-left:20%;
+  text-align:center;
+  width:60%;
 }
 
-.images{
- display:inline-block;
- margin: 20px;
+ul{
+  list-style:none;
+  background-color: #FFE5CC;
 }
 
-.images img{
- height:300px;
- max-height:100%;
- max-width: 100%;
- width:300px;
+li:hover{
+  background-color:lightcoral;
 }
 
-/*Configuracion de los filtros según las opciones de imagenes*/
-
-.grayscale img{
- -ms-filter: grayscale(100%);
- -moz-filter: grayscale(100%);
- -o-filter:grayscale(100%);
- -webkit-filter: grayscale(100%);
- filter:grayscale(100%);
+a{
+  color:gray;
+  text-decoration: none;
 }
 
-.sepia img{
- -ms-filter: sepia(100%);
- -moz-filter: sepia(100%);
- -o-filter:sepia(100%);
- -webkit-filter: sepia(100%);
- filter:sepia(100%);
+a:hover{
+  color:lightslategray;
 }
 
-.invert img{
-  -ms-filter:invert(100%);
-  -moz-filter: invert(100%);
-  -o-filter:invert(100%);
-  -webkit-filter: invert(100%);
-  filter:invert(100%);
+/*Clases que aparecerán y desaparecerán de acuerdo al click*/
+.enabled-menu{
+  display:block;
+}
+
+.disabled-menu{
+  display:none;
 }

@@ -4,34 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mini - zoo</title>
+  <title>Menú de hamburguesa</title>
    <!-- Fuentes externas  -->
-   <link href="css/main.css" rel="stylesheet">
+   
   <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
   <!-- Hojas de estilo para este proyecto  -->
   <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Titulo  -->
-  <h1>MINI ZOO</h1>
-  <!-- Opciones de filtro  -->
- <section id='options'>
-  <select id="effects" title="Opciones de filtro">
-        <option value="original">Original</option>
-        <option value="sepia">Sepia</option>
-        <option value="grayscale">Blanco y negro</option>
-        <option value="invert">Invertir colores</option>
-  </select>
-</section>
-<!-- Capa de imagenes  -->
- <main id='grid'>
-  <div class="images"> <img src='assets/imgs/chanchito.jpg' alt='chanchito'> </div>
-  <div class="images"> <img src='assets/imgs/conejo.jpg' alt='conejo'> </div>
-  <div class="images"> <img src='assets/imgs/cuy.jpg' alt='cuy'> </div>
-  <div class="images"> <img src='assets/imgs/jirafa.jpg' alt='jirafa'> </div>
-  <div class="images"> <img src='assets/imgs/panda.jpg' alt='panda'> </div>
-  <div class="images"> <img src='assets/imgs/perico.jpg' alt='perico'> </div>
- </main>
+ <!-- Botón  -->
+ <button id="btn">
+  <hr>
+  <hr>
+  <hr>
+ </button>
+ <!-- Menú navegador  -->
+ <nav id="options-menu" class="disabled-menu">
+  <ul>
+   <li><a href="">Home</a></li>
+   <li><a href="">About</a></li>
+   <li><a href="">Portfolio</a></li>
+   <li><a href="">Contact</a></li>
+  </ul>
+ </nav>
  <script src="js/app.js">
  </script>
 </body>
